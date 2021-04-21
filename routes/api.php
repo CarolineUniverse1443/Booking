@@ -33,6 +33,16 @@ Route::post('deleteCity', 'App\Http\Controllers\CitiesController@deleteCity');
 
 //================= Flights ================//
 Route::get('getFlights', 'App\Http\Controllers\FlightsController@getFlights');
+Route::post('addFlight', 'App\Http\Controllers\FlightsController@addFlight');
+Route::patch('updateFlight', 'App\Http\Controllers\FlightsController@updateFlight');
+Route::post('deleteFlight', 'App\Http\Controllers\FlightsController@deleteFlight');
+
+//================= Books ================//
+Route::get('getBooks', 'App\Http\Controllers\BooksController@getBooks');
+Route::post('addBook', 'App\Http\Controllers\BooksController@addBook');
+Route::patch('updateBook', 'App\Http\Controllers\BooksController@updateBook');
+Route::post('deleteBook', 'App\Http\Controllers\BooksController@deleteBook');
+
 
 
 

@@ -53,7 +53,7 @@ class UsersController extends Controller
     {
         $user = User::where("id",$req->id)->first();
 
-        if(!$user)
+        if(!$user || $user->api_token == null)
             return response()->json("Запись не найдена");
         
         $user->update($req->all());
@@ -64,7 +64,7 @@ class UsersController extends Controller
     {
         $user = User::where("name", $req->name)->first();
 
-        if(!$user)
+        if(!$user || $user->api_token == null)
             return response()->json("Запись не найдена");
         
         $user->delete();

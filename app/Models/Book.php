@@ -10,5 +10,5 @@ class Book extends Model
     //use HasFactory;
     public $timestamps = false;
 
-    public $fillable = ['user_id','single_flight', 'return_flight', 'book_id'];
+    public $fillable = ['user_id','single_flight', 'single_data', 'return_flight', 'return_data', 'book_id'];
 }

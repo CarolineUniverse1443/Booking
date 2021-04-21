@@ -9,6 +9,5 @@ class City extends Model
 { 
     //use HasFactory;
     public $timestamps = false;
-    public $table = 'cities';
     public $fillable = ['city_name'];
 }

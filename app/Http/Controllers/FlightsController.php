@@ -16,7 +16,7 @@ class FlightsController extends Controller
     	return response()->json(Flight::get());
     }
 
-     public function addFlight(Request $req)
+    public function addFlight(Request $req)
     {
         $validator = Validator::make($req->all(), [
             'flight_from' => 'required',
