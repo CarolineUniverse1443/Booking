@@ -11,4 +11,9 @@ class Book extends Model
     public $timestamps = false;
 
     public $fillable = ['user_id','single_flight', 'single_data', 'return_flight', 'return_data', 'book_id'];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

@@ -20,4 +20,9 @@ class User extends Model
 		$this->save();
 		return $token;
 	}
+
+	public function book()
+	{
+		return $this->hasOne(Book::class, 'user_id');
+	}
 }
