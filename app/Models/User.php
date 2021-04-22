@@ -23,6 +23,6 @@ class User extends Model
 
 	public function book()
 	{
-		return $this->hasOne(Book::class, 'user_id');
+		return $this->hasMany(Book::class, 'user_id');
 	}
 }
